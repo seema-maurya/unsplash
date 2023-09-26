@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "npx vite serve --host",
     "build": "npx vite build --emptyOutDir",
-    "preview": "npx vite preview --host"
+    "preview": "npx vite preview --host",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Sachin Bhatnagar <sachin@knowledgehut.co> (https://www.knowledgehut.com)",
   "license": "AFL-3.0",
@@ -19,5 +21,6 @@
   },
   "dependencies": {
     "unsplash-js": "^7.0.18"
-  }
+  },
+  "homepage": "https://seema-maurya.github.io/unsplash"
 }
